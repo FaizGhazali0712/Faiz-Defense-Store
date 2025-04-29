@@ -827,67 +827,79 @@ ul#navigasi li.hori {
 }
 /*dark light mode */
 :root {
-  /* Light theme colors */
+  /* Light Theme */
   --bg-color: #ffffff;
-  --text-color: #333333;
-  --primary-color: #4285f4;
-  --secondary-color: #f1f1f1;
-  --card-bg: #f9f9f9;
+  --text-color: #000000;
+  --primary-color: #2563eb;
+  --secondary-color: #f3f4f6;
+  --border-color: #e5e7eb;
+  --btn-text: #ffffff;
+  --btn-bg: #2563eb;
+  --link-color: #2563eb;
+  --header-bg: #f3f4f6;
 }
 
 [data-theme="dark"] {
-  /* Dark theme colors */
+  /* Dark Theme */
   --bg-color: #121212;
-  --text-color: #f1f1f1;
-  --primary-color: #8ab4f8;
-  --secondary-color: #1e1e1e;
-  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --primary-color: #3b82f6;
+  --secondary-color: #1f2937;
+  --border-color: #374151;
+  --btn-text: #000000;
+  --btn-bg: #ffffff;
+  --link-color: #60a5fa;
+  --header-bg: #1f2937;
 }
 
+/* Apply theme colors to all elements */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Example of other elements using theme variables */
+h1, h2, h3, h4, h5, h6,
+p, li, td, th, label,
+span:not(.icon), div:not([class]) {
+  color: var(--text-color) !important;
+}
+
 header {
-  background-color: var(--secondary-color);
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
 }
 
-.card {
-  background-color: var(--card-bg);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+nav a {
+  color: var(--link-color);
 }
 
-a {
-  color: var(--primary-color);
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Theme switcher button styles */
-.theme-switcher {
-  position: absolute;
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 100;
-}
-
-#theme-toggle {
-  background: var(--secondary-color);
-  border: none;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--btn-text);
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-#theme-toggle:hover {
-  transform: scale(1.1);
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .dark-icon {
@@ -901,14 +913,3 @@ a {
 [data-theme="dark"] .dark-icon {
   display: block;
 }
-[data-theme="blue"] {
-  --primary-color: #2962ff;
-  /* other colors */
-}
-.theme-switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
