@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Online E-Commerce</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="javascript" type="text/javascript" href="Script for Online E-Commerce.js">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <nav>
@@ -19,12 +19,20 @@
                 </ul>
                 </div>
                 <div class="flex-items">    
-                <div class="SearchContainer">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>      
-                </div>
+                  <div class="search-container">
+                    <form action="/search" method="get" class="search-form">
+                      <input type="text" 
+                             placeholder="Search..." 
+                             name="query" 
+                             class="search-input"
+                             aria-label="Search">
+                      <button type="submit" class="search-button">
+                        <svg class="search-icon" viewBox="0 0 24 24">
+                          <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
                 </div>
             </div>
            
@@ -32,34 +40,401 @@
         
         <div class="header">
             
-            
         </div>
-        <div class="slideshow">
-            <div class="mySlides">
-                <div class="numbertext"> 1 / 6</div>
-                <img src="image/Group 97.png" style="width: 100%;">
+        <div class="slideshow-container">
+          <!-- Slides -->
+          <div class="mySlides fade">
+            <div class="number-text">1 / 8</div>
+            <img src="image/Group 103.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="number-text">2 / 8</div>
+            <img src="image/Group 102.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="number-text">3 / 8</div>
+            <img src="image/Group 101.png" style="width:100%">
+            
+          </div>
+          <div class="mySlides fade">
+            <div class="number-text">4 / 8</div>
+            <img src="image/Group 95.png" style="width:100%">
+            
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="number-text">5 / 8</div>
+            <img src="image/Group 99.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="number-text">6 / 8</div>
+            <img src="image/Group 94.png" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <div class="number-text">7 / 8</div>
+            <img src="image/Group 100.png" style="width:100%">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="number-text">8 / 8</div>
+            <img src="image/Group 96.png" style="width:100%">
+          </div>
+      
+          <!-- Navigation arrows -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+          <!-- Dots navigation -->
+          <div style="text-align: center;"class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <br>
+        <h2 style="text-align: center; font-size: 55px;">Our Daily Product</h2>
+        <!--Cards-->
+        <div class="product-cards">
+            <!-- Product Card 1 -->
+            
+            <div class="product-card">
+              <div class="badge">Sale</div>
+              <div class="product-tumb">
+                <img src="image/wp9768074-us-marines-attack-helicopter-wallpapers-removebg-preview.png" alt="Product image">
+              </div>
+              <div class="product-details">
+                <span class="product-category">Aviation</span>
+                <h4><a href="#">Bell AH-1Z Viper</a></h4>
+                <p>New generation of Attack Helicopter, Devloped from AH-1 Cobra Series. Armed with powerful M197 20mm Cannons and 6 Hardpoints</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$32.500.000</small>$29.999.999</div>
+                  <div class="product-links">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+              <button class="add-to-cart">
+                <span class="add-text">Add to Cart</span>
+                <span class="added-text">Added!</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-check"></i>
+              </button>
             </div>
-            <div class="mySlides">
-                <div class="numbertext"> 2 / 6</div>
-                <img src="image/Group 94.png" style="width: 100%;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 3 / 6</div>
-                <img src="image/Group 95.png" style="width: 100%;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 4 / 6</div>
-                <img src="image/Group 96.png" style="width: 100%;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 5 / 6</div>
-                <img src="image/Group 98.png" style="width: 100%;">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext"> 6 / 6</div>
-                <img src="image/Group 93 (1).png" style="width: 100%;">
+           
+          
+            <!-- Product Card 2 -->
+            <div class="product-card">
+              <div class="badge">Sale</div>
+              <div class="product-tumb">
+                <img src="image/Yak-130-Scale-Model-07-removebg-preview.png" alt="Product image">
+              </div>
+              <div class="product-details">
+                <span class="product-category">Aviation</span>
+                <h4><a href="#">Yakovlev Yak-130</a></h4>
+                <p>Russian Dual Engine Trainer and Light Attack Jet that used by cadets to train before switch to Advanced Fighter Jet like Su-30 or Su-35 </p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$33.750.000</small>$30.000.000</div>
+                  <div class="product-links">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+              <button class="add-to-cart">
+                <span class="add-text">Add to Cart</span>
+                <span class="added-text">Added!</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-check"></i>
+              </button>
             </div>
             
-        </div>
-    </body>
+            <!--Product Card 3-->
+            <div class="product-card">
+              <div class="badge">Sale</div>
+              <div class="product-tumb">
+                <img src="image/t-80u-osnovnoi-boevoi-tank-rossii-poligon-removebg-preview.png" alt="Product image">
+              </div>
+              <div class="product-details">
+                <span class="product-category">Vehicle</span>
+                <h4><a href="#">T-80U</a></h4>
+                <p>A Modern Main Battle Tank Developed from T-64 and T-80, Armed with 125mm Smoothboore 2A46M-1 and capability to launch ATGM 9M119 Refleks.</p>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$3.759.999</small>$3.199.999</div>
+                  <div class="product-links">
+                    <a href="#"><i class="fas fa-heart"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+              <button class="add-to-cart">
+                <span class="add-text">Add to Cart</span>
+                <span class="added-text">Added!</span>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-check"></i>
+              </button>
+            </div>
+            <!--Product Card 4-->
+              <div class="product-card">
+                <div class="product-tumb">
+                  <img src="image/apc_anoa-removebg-preview.png" alt="Product image">
+                </div>
+                <div class="product-details">
+                  <span class="product-category">Vehicle</span>
+                  <h4><a href="#">Pindad Anoa 6X6 RCWS</a></h4>
+                  <p>A new Advanced Armoured Personnel Carrier with configuration 6X6 with advanced protection and RCWS Gun System, Powered with MIDR 062045 six-cylinder turbo-charged diesel engine and Certified with STANAG 4569 Protection.</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$266.999</div>
+                    <div class="product-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <span class="add-text">Add to Cart</span>
+                  <span class="added-text">Added!</span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+              <!--Product Card 5-->
+              <div class="product-card">
+                <div class="product-tumb">
+                  <img src="image/gpnvg-18-removebg-preview.png" alt="Product image">
+                </div>
+                <div class="product-details">
+                  <span class="product-category">Accessories</span>
+                  <h4><a href="#">L3Harris GPNVG-18</a></h4>
+                  <p>Advanced Night Vision Goggles with 4 tube for better optical range and with bigger FOV around 97 Degrees and also compactibility in every condition include extreme condition.</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price"><small>$76.999</small>$45.999</div>
+                    <div class="product-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <span class="add-text">Add to Cart</span>
+                  <span class="added-text">Added!</span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+             
+              <!--Product Card 6-->
+              <div class="product-card">
+                <div class="product-tumb">
+                  <img src="image/Scar-L-removebg-preview.png" alt="Product image">
+                </div>
+                <div class="product-details">
+                  <span class="product-category">Firearms</span>
+                  <h4><a href="#">FN SCAR-L</a></h4>
+                  <p>Special Assault Rifle that Designed for Military and Police Forces, came with two Models and with Every Variants:
+                    - Scar-L
+                    - Scar-H
+                  </p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$2.599</div>
+                    <div class="product-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <span class="add-text">Add to Cart</span>
+                  <span class="added-text">Added!</span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+              <!--Product Card 7-->
+              <div class="product-card">
+                <div class="product-tumb">
+                  <img src="image/ak103-1-12333-458-removebg-preview.png" alt="Product image">
+                </div>
+                <div class="product-details">
+                  <span class="product-category">Firearms</span>
+                  <h4><a href="#">Kalashnikov AK-103</a></h4>
+                  <p>A new modern Assault Rifle Developed from AK-100 series which combining the Legendary AK-47 with new Material and Modern Features, compability Muzzle Brake, Polymer Stock .</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$1.399</div>
+                    <div class="product-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <span class="add-text">Add to Cart</span>
+                  <span class="added-text">Added!</span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+             <!--Product Card 8-->
+              <div class="product-card">
+                <div class="product-tumb">
+                  <img src="image/hk416.png" alt="Product image">
+                </div>
+                <div class="product-details">
+                  <span class="product-category">Firearms</span>
+                  <h4><a href="#">HK416A5 14.5"</a></h4>
+                  <p>Premium Carbine with more upgrades,modernization and used by special commando forces around the world.</p>
+                  <div class="product-bottom-details">
+                    <div class="product-price">$1.299.99</div>
+                    <div class="product-links">
+                      <a href="#"><i class="fas fa-heart"></i></a>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="add-to-cart">
+                  <span class="add-text">Add to Cart</span>
+                  <span class="added-text">Added!</span>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-check"></i>
+                </button>
+              </div>
+              
+          </div>
+        <br>
+        
+        <br>
+        <section class="article-section">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="articles-container">
+              
+              <article class="article-card">
+                <div class="article-image">
+                  <img src="image/hq720.png" alt="Article thumbnail">
+                </div>
+                <div class="article-content">
+                  <span class="article-category">Technology</span>
+                  <h3 class="article-title">China Has Been Launched new 6th Gen Aircraft </h3>
+                  <p class="article-excerpt">Explore the upcoming trends in web development for 2024 and beyond...</p>
+                  <a href="#" class="read-more">Read More </a>
+                </div>
+              </article>
+              
+              <article class="article-card">
+                <div class="article-image">
+                  <img src="image/download (3).png" alt="Article thumbnail">
+                </div>
+                <div class="article-content">
+                  <span class="article-category">Firearms</span>
+                  <h3 class="article-title">Minimalist UI Principles</h3>
+                  <p class="article-excerpt">How minimalist design improves user experience and conversion rates...</p>
+                  <a href="#" class="read-more">Read More </a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <div class="article-image">
+                  <img src="image/27012023_DEMO_ANOA_1-1.png" alt="Article thumbnail">
+                </div>
+                <div class="article-content">
+                  <span class="article-category">Firearms</span>
+                  <h3 class="article-title">Minimalist UI Principles</h3>
+                  <p class="article-excerpt">How minimalist design improves user experience and conversion rates...</p>
+                  <a href="#" class="read-more">Read More </a>
+                </div>
+              </article>
+
+              <article class="article-card">
+                <div class="article-image">
+                  <img src="image/Yakovlev_presents_new_Yak-130M_light_combat_aircraft_at_Army-2024_exhibition_925_001-65991caf.png" alt="Article thumbnail">
+                </div>
+                <div class="article-content">
+                  <span class="article-category">Firearms</span>
+                  <h3 class="article-title">Minimalist UI Principles</h3>
+                  <p class="article-excerpt">How minimalist design improves user experience and conversion rates...</p>
+                  <a href="#" class="read-more">Read More </a>
+                </div>
+              </article>
+              
+            
+            </div>          
+        </section>
+        <footer class="site-footer">
+          <div class="footer-container">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+              <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We're dedicated to providing quality services and products to our customers with a focus on innovation and customer satisfaction.</p>
+                <div class="footer-logo">
+                  <img src="image/Group 92.png" alt="Company Logo">
+                </div>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Weapon Customization</a></li>
+                  <li><a href="#">Build Up Vehicles</a></li>
+                  <li><a href="#">Vehicle Customization</a></li>
+                  <li><a href="#">Repair</a></li>
+                  <li><a href="#">Graphic Design</a></li>
+                  <li><a href="#">App Development</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                  <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</li>
+                  <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+                  <li><i class="fas fa-envelope"></i> info@yourcompany.com</li>
+                  <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-reddit"></i></a>
+              </div>
+              
+              <div class="copyright">
+                <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+              </div>
+              
+              <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <script src="script.js"></script>
+      </body>
 </html>

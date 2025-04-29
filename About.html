@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav>
+            <div id="flex-container">
+                <div class="flex-items">
+                    <img  class="Logo" src="image/Group 92.png">
+                </div>
+                <div class="flex-items">
+                <ul id="navigasi">
+                    <li class="hori"><a href="index.html" class="center">Home</a></li>
+                    <li class="hori"><a href="About.html" class="center">About</a></li> 
+                    <li class="hori"><a href="Contact.html" class="center">Contact</a></li> 
+                </ul>
+                </div>
+                <div class="flex-items">    
+                    <div class="search-container">
+                        <form action="/search" method="get" class="search-form">
+                          <input type="text" 
+                                 placeholder="Search..." 
+                                 name="query" 
+                                 class="search-input"
+                                 aria-label="Search">
+                          <button type="submit" class="search-button">
+                            <svg class="search-icon" viewBox="0 0 24 24">
+                              <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                          </button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+           
+        </nav>
+        <div class="about-section">
+            <h1>About Us Page</h1>
+            <p>Welcome to Faiz Defense Store , your ultimate destination for high-quality defense products and tactical gear. 
+                Whether you're a seasoned professional, a first responder, or someone looking for personal safety solutions, 
+                we offer a comprehensive range of items designed to meet your needs.
+            </p>
+            <p></p>
+          </div>
+          
+          <h1 style="text-align:center">About Owner</h2>
+            <div class="about-me">
+                <div class="right-text">
+                    <p>Hi!, I'm Faiz. the proud owner and founder of this defense store dedicated 
+                        to providing top-notch products and services to enhance your safety and security.
+                        With a passion for personal safety and a background in [relevant experience, e.g., law enforcement, military, or security], I have spent over 15 years in the industry. 
+                        My journey began when I recognized a gap in the market for quality defense products that cater not only to professionals but also to everyday individuals seeking reliable safety solutions.
+                    </p>
+                </div>
+                <div class="left-image">
+                    <img src="image/Screenshot 2024-10-08 132854.png">
+                </div>
+            </div>
+            <br>
+            <br>    
+            <button class="accordion">What types of products do you sell?</button>
+                <div class="panel">
+                <p>
+                    We specialize in a wide range of defense, tactical gear, Planes, Tanks, Armoured Vehicle, including: Firearms (handguns, rifles), Armor Vest, 
+                </p>
+                </div>
+            <button class="accordion">Section 2</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+
+            <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+          
+    </body>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</html>
