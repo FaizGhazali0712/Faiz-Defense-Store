@@ -866,7 +866,7 @@ a {
 
 /* Theme switcher button styles */
 .theme-switcher {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   z-index: 100;
@@ -900,5 +900,15 @@ a {
 
 [data-theme="dark"] .dark-icon {
   display: block;
+}
+[data-theme="blue"] {
+  --primary-color: #2962ff;
+  /* other colors */
+}
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
