@@ -891,7 +891,6 @@ nav a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: var(--primary-color);
   color: var(--btn-text);
   border: none;
   cursor: pointer;
@@ -913,6 +912,25 @@ nav a {
 [data-theme="dark"] .dark-icon {
   display: block;
 }
-  .product-cards{
-  color: var(--text-color) !important;
+  .product-cards  {
+  background-color: var(--bg-color) !important;
+}
+.product-card {
+  background: var(--bg-color);
+}
+.article-card {
+  background: var(--bg-color);
+}
+.article-category {
+  background: var(--bg-color);
+}
+.product-details {
+  color: var(--bg-color);
+}
+.add-to-cart {
+  background: var(--bg-color);
+}
+.add-to-cart:hover {
+  background: var(--bg-color);
+  color: var(--text-color);
 }
