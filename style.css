@@ -913,3 +913,6 @@ nav a {
 [data-theme="dark"] .dark-icon {
   display: block;
 }
+  .product-cards{
+  color: var(--text-color) !important;
+}
