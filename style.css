@@ -9,7 +9,7 @@ html {
     color: black;
 }
 #flex-container {
-  background-color: rgb(219, 207, 207);
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -933,4 +933,8 @@ nav a {
 .add-to-cart:hover {
   background: var(--bg-color);
   color: var(--text-color);
+}
+#flex-container {
+  background: var(--bg-color);
+
 }
